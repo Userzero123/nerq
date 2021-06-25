@@ -1,0 +1,98 @@
+html,
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 0.2fr 2.3fr 0.1fr 2.2fr 0.1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 20px 20px;
+  grid-template-areas:
+    ". . . . ."
+    ". area1 . area2 ."
+    ". area3 . area4 ."
+    ". . . . .";
+}
+
+.area1 { 
+margin-top:-200px;
+grid-area: area1; 
+}
+
+.area2 { 
+margin-top:-200px;
+grid-area: area2; }
+
+.area3 {
+  display: grid;
+  grid-template-columns: 1.4fr 0.2fr 1.4fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "text1 . text2"
+    "text1 . text2";
+  grid-area: area3;
+}
+
+.text1 { grid-area: text1; }
+
+.text2 { grid-area: text2; }
+
+.area4 {
+  display: grid;
+  grid-template-columns: 1.4fr 0.2fr 1.4fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "text3 . text4"
+    "text3 . text4";
+  grid-area: area4;
+}
+
+.text3 { grid-area: text3; }
+
+.text4 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    ". . ."
+    ". . .";
+  grid-area: text4;
+}
+
+.kl1
+{
+float:left;
+margin: 10px 10px 10px 0;
+width:45%;
+}
+.kl2
+{
+float:right;
+margin: 7px 7px 7px 0;
+width:55%;
+height:auto;
+
+}
+
+.kl3
+{
+float:left;
+width:100%;
+height:auto;
+}
+
+.kl4
+{
+float:right;
+width:950%;
+height:auto;
+}
+
+
+</body>
